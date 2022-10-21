@@ -19,7 +19,8 @@ section#tabuleiro{
 .quadrado{
     border: 2px solid black;
     height: 126.8px;
-    width: 126.3px;
+   /* max-width: 126.3px;*/
+    width: 31.5%;
     display: inline-block;
     cursor: pointer;
 }
