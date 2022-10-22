@@ -3,6 +3,7 @@
 @media screen and (max-width: 499px){
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 header{
     text-align: center;
@@ -21,18 +22,30 @@ section#tabuleiro{
     border: 2px solid black;
     height: 126.8px;
    /* max-width: 126.3px;*/
-    width: 30.9%;
+    width: 30.8%;
     display: inline-block;
     cursor: pointer;
 }
 }
 @media  screen and (min-width: 499px){
+    *{
+        margin: 0px;
+    }
+    input{
+        margin: 5px;
+    }
     body{
         font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
     }
     header{
         text-align: center;
         height: 80px;
+        background-color: rgba(250, 192, 121, 0.582);
+        padding: 10px;
+    }
+    header > h1{
+        margin: 0px;
     }
     section#tabuleiro{
         max-width: 400px;
@@ -40,7 +53,10 @@ section#tabuleiro{
         min-height: 400px;
         max-height: none;
         background-color: white;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
         border: 5px solid black;
     }
     .quadrado{
@@ -56,5 +72,10 @@ section#tabuleiro{
         min-width: none;
         margin: auto;
         text-align: center;
+        background-color: bisque;
+        padding: 10px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        
     }
 }
