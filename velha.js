@@ -9,6 +9,7 @@ var clicouq6 = false
 var clicouq7 = false
 var clicouq8 = false
 var clicouq9 = false
+var tentativa = 0
 var q1 = 0
 var q2 = 0
 var q3 = 0
@@ -18,6 +19,31 @@ var q6 = 0
 var q7 = 0
 var q8 = 0
 var q9 = 0
+var vencedor = window.document.getElementById('vencedor')
+var p10 = window.document.getElementById('p1')
+var p20 = window.document.getElementById('p2')
+var escolha = 0
+function j1(){
+    vez = 1
+    var j2 = window.document.getElementById('j2')
+    if(escolha % 2 == 0){
+    var j1 = window.document.getElementById('j1')
+    j1.style.background = 'green'
+    j2.style.background = 'none'
+    }
+    escolha = 1
+}
+function j2(){
+    vez = 0
+    escolha = 1
+    var j1 = window.document.getElementById('j1')
+    if(escolha / 2 == 0.5){
+    var j2 = window.document.getElementById('j2')
+    j2.style.background = 'green'
+    j1.style.background = 'none'
+    }
+    escolha = 0
+}
 function velha1(){
     var quadrado1 = document.getElementById('q1')
     if(clicouq1 == false){
@@ -33,6 +59,57 @@ function velha1(){
             q1 += 2
         }
         clicouq1 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha2(){
@@ -50,6 +127,57 @@ function velha2(){
             q2 = 2
         }
         clicouq2 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha3(){
@@ -67,6 +195,57 @@ function velha3(){
             q3 = 2
         }
         clicouq3 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha4(){
@@ -84,6 +263,57 @@ function velha4(){
             q4 = 2
         }
         clicouq4 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha5(){
@@ -101,6 +331,57 @@ function velha5(){
             q5 = 2
         }
         clicouq5 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha6(){
@@ -118,6 +399,57 @@ function velha6(){
             q6 = 2
         }
         clicouq6 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha7(){
@@ -135,6 +467,57 @@ function velha7(){
             q7 = 2
         }
         clicouq7 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha8(){
@@ -152,6 +535,57 @@ function velha8(){
             q8 = 2
         }
         clicouq8 = true
+        tentativa += 1
+        if(q1 == 1 && q2 == 1 && q3 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        } 
+        if(q4 == 1 && q5 == 1 && q6 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q7 == 1 && q8 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q5 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q5 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q1 == 1 && q4 == 1 && q7 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q2 == 1 && q5 == 1 && q8 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+        if(q3 == 1 && q6 == 1 && q9 == 1){
+            vencedor.innerHTML = `Vitória de ${p10.value}`
+        }
+
+
+        if(q1 == 2 && q2 == 2 && q3 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        } 
+        if(q4 == 2 && q5 == 2 && q6 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q7 == 2 && q8 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q5 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q5 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q1 == 2 && q4 == 2 && q7 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q2 == 2 && q5 == 2 && q8 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
+        if(q3 == 2 && q6 == 2 && q9 == 2){
+            vencedor.innerHTML = `Vitória de ${p20.value}`
+        }
     }
 }
 function velha9(){
@@ -169,9 +603,56 @@ function velha9(){
             q9 = 2
         }
         clicouq9 = true
+        tentativa += 1
+            if(q1 == 1 && q2 == 1 && q3 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            } 
+            if(q4 == 1 && q5 == 1 && q6 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+            if(q7 == 1 && q8 == 1 && q9 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+            if(q1 == 1 && q5 == 1 && q9 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+            if(q3 == 1 && q5 == 1 && q7 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+            if(q1 == 1 && q4 == 1 && q7 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+            if(q2 == 1 && q5 == 1 && q8 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+            if(q3 == 1 && q6 == 1 && q9 == 1){
+                vencedor.innerHTML = `Vitória de ${p10.value}`
+            }
+
+
+            if(q1 == 2 && q2 == 2 && q3 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            } 
+            if(q4 == 2 && q5 == 2 && q6 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
+            if(q7 == 2 && q8 == 2 && q9 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
+            if(q1 == 2 && q5 == 2 && q9 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
+            if(q3 == 2 && q5 == 2 && q7 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
+            if(q1 == 2 && q4 == 2 && q7 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
+            if(q2 == 2 && q5 == 2 && q8 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
+            if(q3 == 2 && q6 == 2 && q9 == 2){
+                vencedor.innerHTML = `Vitória de ${p20.value}`
+            }
     }
-}
-var vencedor = window.document.getElementById('vencedor')
-if(q1 == 1 || q1 == 2 && q2 == 1 || q2 == 2 && q3 == 1 || q3 == 2 && q4 == 1 || q4 == 2 && q5 == 1 || q5 == 2 && q6 == 1 || q6 == 2 && q7 == 1 || q7 == 2 && q8 == 1 || q8 == 2 && q9 == 1 || q9 == 2){
-    vencedor.innerHTML = q1
 }

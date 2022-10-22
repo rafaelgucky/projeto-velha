@@ -11,19 +11,25 @@
     <header>
         <h1>Jogo da velha</h1>
     </header>
-    <section id="tabuleiro">
-        <div class="quadrado" id="q1" onclick="velha1()"></div>
-        <div class="quadrado" id="q2" onclick="velha2()"></div>
-        <div class="quadrado" id="q3" onclick="velha3()"></div>
-        <div class="quadrado" id="q4" onclick="velha4()"></div>
-        <div class="quadrado" id="q5" onclick="velha5()"></div>
-        <div class="quadrado" id="q6" onclick="velha6()"></div>
-        <div class="quadrado" id="q7" onclick="velha7()"></div>
-        <div class="quadrado" id="q8" onclick="velha8()"></div>
-        <div class="quadrado" id="q9" onclick="velha9()"></div>
+    <section id="tudo">
+        <p><label for="p1"> Jogador 1 [X]:</label> <input type="text" name="tetxt" id="p1"></p>
+        <p><label for="p2"> Jogador 2 [O]:</label> <input type="text" name="text" id="p2"></p>
+        <p>Quem começa: <input type="button" value="Jogador 1" onclick="j1()" id="j1"> <input type="button" value="Jogador 2" onclick="j2()" id="j2"></p>
+        <section id="tabuleiro">
+            <div class="quadrado" id="q1" onclick="velha1()"></div>
+            <div class="quadrado" id="q2" onclick="velha2()"></div>
+            <div class="quadrado" id="q3" onclick="velha3()"></div>
+            <div class="quadrado" id="q4" onclick="velha4()"></div>
+            <div class="quadrado" id="q5" onclick="velha5()"></div>
+            <div class="quadrado" id="q6" onclick="velha6()"></div>
+            <div class="quadrado" id="q7" onclick="velha7()"></div>
+            <div class="quadrado" id="q8" onclick="velha8()"></div>
+            <div class="quadrado" id="q9" onclick="velha9()"></div>
+        </section>
+        <p id="vencedor"></p>
     </section>
     <footer>
-        <p id="vencedor"></p>
+        
     </footer>
 </body>
 <script src="velha.js"></script>

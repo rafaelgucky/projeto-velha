@@ -32,7 +32,7 @@ section#tabuleiro{
     }
     header{
         text-align: center;
-        height: 100px;
+        height: 80px;
     }
     section#tabuleiro{
         max-width: 400px;
@@ -50,5 +50,11 @@ section#tabuleiro{
         width: 31.5%;
         display: inline-block;
         cursor: pointer;
+    }
+    section#tudo{
+        max-width: 800px;
+        min-width: none;
+        margin: auto;
+        text-align: center;
     }
 }
