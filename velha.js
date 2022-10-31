@@ -44,6 +44,58 @@ function j2(){
     }
     escolha = 0
 }
+function vencedorjogo(){
+    if(q1 == 1 && q2 == 1 && q3 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    } 
+    if(q4 == 1 && q5 == 1 && q6 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+    if(q7 == 1 && q8 == 1 && q9 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+    if(q1 == 1 && q5 == 1 && q9 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+    if(q3 == 1 && q5 == 1 && q7 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+    if(q1 == 1 && q4 == 1 && q7 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+    if(q2 == 1 && q5 == 1 && q8 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+    if(q3 == 1 && q6 == 1 && q9 == 1){
+        vencedor.innerHTML = `Vitória de ${p10.value}`
+    }
+
+
+    if(q1 == 2 && q2 == 2 && q3 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    } 
+    if(q4 == 2 && q5 == 2 && q6 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+    if(q7 == 2 && q8 == 2 && q9 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+    if(q1 == 2 && q5 == 2 && q9 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+    if(q3 == 2 && q5 == 2 && q7 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+    if(q1 == 2 && q4 == 2 && q7 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+    if(q2 == 2 && q5 == 2 && q8 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+    if(q3 == 2 && q6 == 2 && q9 == 2){
+        vencedor.innerHTML = `Vitória de ${p20.value}`
+    }
+}
 function velha1(){
     var quadrado1 = document.getElementById('q1')
     if(clicouq1 == false){
@@ -60,56 +112,6 @@ function velha1(){
         }
         clicouq1 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha2(){
@@ -128,56 +130,6 @@ function velha2(){
         }
         clicouq2 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha3(){
@@ -196,56 +148,6 @@ function velha3(){
         }
         clicouq3 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha4(){
@@ -264,56 +166,6 @@ function velha4(){
         }
         clicouq4 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha5(){
@@ -332,56 +184,6 @@ function velha5(){
         }
         clicouq5 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha6(){
@@ -400,56 +202,6 @@ function velha6(){
         }
         clicouq6 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha7(){
@@ -468,56 +220,6 @@ function velha7(){
         }
         clicouq7 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha8(){
@@ -536,56 +238,6 @@ function velha8(){
         }
         clicouq8 = true
         tentativa += 1
-        if(q1 == 1 && q2 == 1 && q3 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        } 
-        if(q4 == 1 && q5 == 1 && q6 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q7 == 1 && q8 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q5 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q5 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q1 == 1 && q4 == 1 && q7 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q2 == 1 && q5 == 1 && q8 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-        if(q3 == 1 && q6 == 1 && q9 == 1){
-            vencedor.innerHTML = `Vitória de ${p10.value}`
-        }
-
-
-        if(q1 == 2 && q2 == 2 && q3 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        } 
-        if(q4 == 2 && q5 == 2 && q6 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q7 == 2 && q8 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q5 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q5 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q1 == 2 && q4 == 2 && q7 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q2 == 2 && q5 == 2 && q8 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
-        if(q3 == 2 && q6 == 2 && q9 == 2){
-            vencedor.innerHTML = `Vitória de ${p20.value}`
-        }
     }
 }
 function velha9(){
@@ -604,55 +256,6 @@ function velha9(){
         }
         clicouq9 = true
         tentativa += 1
-            if(q1 == 1 && q2 == 1 && q3 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            } 
-            if(q4 == 1 && q5 == 1 && q6 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-            if(q7 == 1 && q8 == 1 && q9 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-            if(q1 == 1 && q5 == 1 && q9 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-            if(q3 == 1 && q5 == 1 && q7 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-            if(q1 == 1 && q4 == 1 && q7 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-            if(q2 == 1 && q5 == 1 && q8 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-            if(q3 == 1 && q6 == 1 && q9 == 1){
-                vencedor.innerHTML = `Vitória de ${p10.value}`
-            }
-
-
-            if(q1 == 2 && q2 == 2 && q3 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            } 
-            if(q4 == 2 && q5 == 2 && q6 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
-            if(q7 == 2 && q8 == 2 && q9 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
-            if(q1 == 2 && q5 == 2 && q9 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
-            if(q3 == 2 && q5 == 2 && q7 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
-            if(q1 == 2 && q4 == 2 && q7 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
-            if(q2 == 2 && q5 == 2 && q8 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
-            if(q3 == 2 && q6 == 2 && q9 == 2){
-                vencedor.innerHTML = `Vitória de ${p20.value}`
-            }
     }
 }
+setInterval(vencedorjogo, 10)
